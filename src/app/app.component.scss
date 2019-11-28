@@ -1,0 +1,60 @@
+
+.container{
+  min-height: 100vh;
+}
+
+.sideNav{
+  width: 35vw;
+}
+
+.content{
+  width: 65vw;
+}
+
+@media only screen and (max-width:991px) {
+  .sideNav{
+    width: 75vw;
+  }
+
+  .content{
+    width: 100vw;
+  }
+}
+
+
+mat-sidenav-container{
+  padding: 0;
+}
+
+mat-sidenav{
+  min-height: 100vh;
+}
+
+mat-sidenav-content{
+  min-height: 100vh;
+}
+
+mat-list{
+  width: 100%;
+  word-break: break-word;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  margin: unset!important;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+#Cat{
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  left: 50vw;
+  top: 50vh;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
