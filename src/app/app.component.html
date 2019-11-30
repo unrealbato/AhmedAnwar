@@ -1,5 +1,5 @@
 <div  class="container" *ngIf="!ShowMe else Resume">
-  <img id="Cat" src="assets/dev_cat.gif" type="gif" />
+  <img id="Cat" src="./assets/dev_cat.gif" type="gif" />
 </div>
 
 <ng-template #Resume>
@@ -10,7 +10,7 @@
         </mat-card-header>
         <mat-card-title>Ahmed Anwar</mat-card-title>
         <mat-card-subtitle>Full Stack Web developer</mat-card-subtitle>
-        <img mat-card-image src="../assets/profile.jpg">
+        <img mat-card-image src="./assets/profile.jpg">
         <mat-card-content>
           <mat-action-list>
             <button mat-list-item routerLink="">Home</button>

@@ -16,16 +16,16 @@ export class ProjectShotsComponent implements OnInit {
 
   shotSrc() {
     if (this.data.name === 'ad3ely') {
-      return 'assets/projects/ad3ely_1.JPG';
+      return './assets/projects/ad3ely_1.JPG';
     }
     if (this.data.name === 'salon') {
-      return 'assets/projects/salon_1.JPG';
+      return './assets/projects/salon_1.JPG';
     }
     if (this.data.name === 'dr-egypt') {
-      return 'assets/projects/dr-egypt_1.JPG';
+      return './assets/projects/dr-egypt_1.JPG';
     }
     if (this.data.name === 'viendofit') {
-      return 'assets/projects/viendofit_1.JPG';
+      return './assets/projects/viendofit_1.JPG';
     }
   }
 }
