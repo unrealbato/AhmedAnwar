@@ -13,12 +13,12 @@
         <img mat-card-image src="./assets/profile.jpg">
         <mat-card-content>
           <mat-action-list>
-            <button mat-list-item routerLink="">Home</button>
-            <button mat-list-item routerLink="work-experience">Work Experience</button>
-            <button mat-list-item routerLink="education">Education</button>
-            <button mat-list-item routerLink="technical-skills">Technical Skills</button>
-            <button mat-list-item routerLink="projects">Projects</button>
-            <button mat-list-item routerLink="misc">Misc</button>
+            <button mat-list-item routerLink="" (click)="closeDrawer()">Home</button>
+            <button mat-list-item routerLink="work-experience" (click)="closeDrawer()">Work Experience</button>
+            <button mat-list-item routerLink="education" (click)="closeDrawer()">Education</button>
+            <button mat-list-item routerLink="technical-skills" (click)="closeDrawer()">Technical Skills</button>
+            <button mat-list-item routerLink="projects" (click)="closeDrawer()">Projects</button>
+            <button mat-list-item routerLink="misc" (click)="closeDrawer()">Misc</button>
           </mat-action-list>
           <mat-divider></mat-divider>
           <mat-list dense>

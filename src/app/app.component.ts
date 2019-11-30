@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title;
   Drawer = true;
   SideMode = 'side';
+  browserMode = 'Desktop';
   ShowMe = false;
 
   constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
@@ -24,9 +25,11 @@ export class AppComponent implements OnInit {
       if (result.matches) {
         this.SideMode = 'side';
         this.Drawer = true;
+        this.browserMode = 'Desktop';
       } else {
         this.SideMode = 'over';
         this.Drawer = true;
+        this.browserMode = 'Mobile';
       }
     });
 
@@ -42,4 +45,10 @@ export class AppComponent implements OnInit {
     setTimeout(() => this.ShowMe = true, 2000);
   }
 
+  closeDrawer() {
+    if (this.browserMode === 'Mobile') {
+      this.Drawer = !this.Drawer;
+    }
+
+  }
 }
