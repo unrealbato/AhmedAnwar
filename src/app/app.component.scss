@@ -1,6 +1,7 @@
 
 .container{
   min-height: 100vh;
+  background-color: white;
 }
 
 .sideNav{
@@ -57,4 +58,17 @@ img{
   top: 50vh;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+
+.slide-fwd-center {
+  animation: slide-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translateZ(160px);
+  }
 }
