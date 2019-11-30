@@ -4,10 +4,26 @@ html, body {
   min-height: 100vh;
   padding: 0;
 }
+
 body { margin: 0; font-family:Caslon; }
+html {
+  background-color: dimgray;
+}
+
+
+@media only screen and (min-width: 992px) {
+  body{
+    max-width: 80vw;
+    margin: auto;
+    /*border-right: #757575 solid 2px;
+    border-left: #757575 solid 2px;*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+}
 
 .mainContent{
-  background-color: #654f2847;
+  /*background-color: #654f2847;*/
   width: 100%;
   min-height: 100vh;
   margin: 0;

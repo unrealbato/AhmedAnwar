@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
       }
     });
 
-    setTimeout(() => this.ShowMe = true, 50);
+    setTimeout(() => this.ShowMe = true, 2000);
   }
 
 }
